@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color Flipper || Simple</title>
+    <title>Grocery Bud</title>
     <!-- normalize -->
     <link rel="stylesheet" href="./normalize.css" />
     <!-- main -->
@@ -16,20 +16,56 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="nav-center">
-        <h4>color flipper</h4>
-        <ul class="nav-links">
-          <li><a href="index.html">simple</a></li>
-          <li><a href="hex.html">hex</a></li>
-        </ul>
+    <section class="section-center">
+      <!-- form -->
+      <form class="grocery-form">
+        <div class="alert alert-danger">please enter value</div>
+        <h4>grocery bud</h4>
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="e.g. eggs" />
+          <button type="submit" class="btn submit-btn text-small">
+            submit
+          </button>
+        </div>
+      </form>
+      <!-- list -->
+      <div class="grocery-container">
+        <!-- list items -->
+        <div class="grocery-list">
+          <!-- grocery item -->
+          <article class="grocery-item">
+            <span class="title">apples</span>
+            <div class="btn-container">
+              <!-- edit btn -->
+              <button type="button" class="edit-btn">
+                <i class="fa-solid fa-edit"></i>
+              </button>
+              <!-- delete btn -->
+              <button type="button" class="delete-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-- end of grocery item -->
+          <!-- grocery item -->
+          <article class="grocery-item">
+            <span class="title">oranges</span>
+            <div class="btn-container">
+              <!-- edit btn -->
+              <button type="button" class="edit-btn">
+                <i class="fa-solid fa-edit"></i>
+              </button>
+              <!-- delete btn -->
+              <button type="button" class="delete-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-- end of grocery item -->
+        </div>
+        <!-- clear button -->
+        <button type="button" class="clear-btn text-small">clear items</button>
       </div>
-    </nav>
-    <main>
-      <div class="container">
-        <h2>background color : <span class="color">#f8fafc</span></h2>
-        <button class="btn btn-hero" id="btn">click me</button>
-      </div>
-    </main>
+    </section>
   </body>
 </html>

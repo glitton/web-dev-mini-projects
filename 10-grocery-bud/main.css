@@ -294,40 +294,85 @@ nav a:hover {
 
 /* 
 ======================
-Container
+Grocery
 ======================
 */
-main {
-  height: calc(100vh - 4rem);
-  display: grid;
-  place-items: center;
-}
-.container {
-  text-align: center;
-}
-.container h2 {
-  background: var(--clr-black);
-  color: var(--clr-white);
+
+.section-center {
+  background: var(--clr-white);
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow-2);
+  transition: var(--transition);
   padding: 1rem;
-  margin-bottom: 2.5rem;
-  letter-spacing: 5px;
-  font-weight: 600;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: var(--fixed-width);
 }
-.color {
-  color: var(--primary-500);
-  text-transform: uppercase;
+.section-center:hover {
+  box-shadow: var(--shadow-4);
 }
-.btn-hero {
-  text-transform: uppercase;
+.alert {
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+}
+.grocery-form h4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.grocery-form .form-row {
+  display: flex;
+}
+.grocery-form .form-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.submit-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100px;
+}
+.grocery-container {
+  margin-top: 2rem;
+}
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+  padding: 0.25rem 1rem;
+  border-radius: var(--border-radius);
+  text-transform: capitalize;
+  color: var(--grey-700);
+}
+.grocery-item:hover {
+  color: var(--grey-500);
+  background: var(--grey-100);
+}
+.edit-btn,
+.delete-btn {
   background: transparent;
-  color: var(--clr-black);
-  letter-spacing: 0.25rem;
-  font-weight: bold;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid var(--clr-black);
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
 }
-.btn-hero:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+.edit-btn {
+  color: var(--clr-green-dark);
+}
+.delete-btn {
+  color: var(--clr-red-dark);
+}
+.clear-btn {
+  color: var(--clr-red-dark);
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  background: transparent;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  background: transparent;
+  border-color: transparent;
 }
