@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color Flipper || Simple</title>
+    <title>Menu</title>
     <!-- normalize -->
     <link rel="stylesheet" href="./normalize.css" />
     <!-- main -->
@@ -16,20 +16,74 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="nav-center">
-        <h4>color flipper</h4>
-        <ul class="nav-links">
-          <li><a href="index.html">simple</a></li>
-          <li><a href="hex.html">hex</a></li>
-        </ul>
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>our menu</h2>
+        <div class="title-underline"></div>
       </div>
-    </nav>
-    <main>
-      <div class="container">
-        <h2>background color : <span class="color">#f8fafc</span></h2>
-        <button class="btn btn-hero" id="btn">click me</button>
+      <!-- end of title -->
+      <!-- filter buttons -->
+      <div class="btn-container">
+        <button type="button" class="btn filter-btn">all</button>
+        <button type="button" class="btn filter-btn">breakfast</button>
+        <button type="button" class="btn filter-btn">lunch</button>
+        <button type="button" class="btn filter-btn">shakes</button>
       </div>
-    </main>
+      <!-- end of filter buttons -->
+      <div class="section-center">
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="pancakes" class="img photo" />
+          <div class="item-info">
+            <header>
+              <h5>buttermilk pancakes</h5>
+              <span class="price">$10</span>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              aliquam! Ad repellendus alias accusantium expedita fuga recusandae
+              itaque voluptas velit! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Harum, inventore!
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="pancakes" class="img photo" />
+          <div class="item-info">
+            <header>
+              <h5>buttermilk pancakes</h5>
+              <span class="price">$10</span>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              aliquam! Ad repellendus alias accusantium expedita fuga recusandae
+              itaque voluptas velit! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Harum, inventore!
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="pancakes" class="img photo" />
+          <div class="item-info">
+            <header>
+              <h5>buttermilk pancakes</h5>
+              <span class="price">$10</span>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              aliquam! Ad repellendus alias accusantium expedita fuga recusandae
+              itaque voluptas velit! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Harum, inventore!
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+      </div>
+    </section>
   </body>
 </html>

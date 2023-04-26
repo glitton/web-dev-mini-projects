@@ -120,7 +120,7 @@ ul {
   padding: 0;
 }
 img {
-  width: 50%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -294,40 +294,86 @@ nav a:hover {
 
 /* 
 ======================
-Container
+Menu
 ======================
 */
-main {
-  height: calc(100vh - 4rem);
-  display: grid;
-  place-items: center;
+.menu {
+  padding: 5rem 0;
 }
-.container {
-  text-align: center;
+.btn-container {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-.container h2 {
-  background: var(--clr-black);
-  color: var(--clr-white);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  margin-bottom: 2.5rem;
-  letter-spacing: 5px;
-  font-weight: 600;
-}
-.color {
-  color: var(--primary-500);
-  text-transform: uppercase;
-}
-.btn-hero {
-  text-transform: uppercase;
+.filter-btn {
   background: transparent;
-  color: var(--clr-black);
-  letter-spacing: 0.25rem;
-  font-weight: bold;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid var(--clr-black);
+  color: var(--primary-500);
+  border: 1px solid var(--primary-500);
 }
-.btn-hero:hover {
+.filter-btn:hover {
   color: var(--clr-white);
-  background: var(--clr-black);
+  border: 1px solid var(--primary-700);
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+
+.photo {
+  height: 200px;
+  border-radius: var(--border-radius);
+}
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px dotted var(--grey-500);
+}
+.item-info h5 {
+  margin-bottom: 0.5rem;
+}
+.price {
+  color: var(--primary-500);
+  font-size: 1.2rem;
+}
+.item-text {
+  margin: 0;
+  padding-top: 0.5rem;
+  color: var(--grey-500);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+    align-items: center;
+  }
+  .photo {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+  .menu-item {
+    align-items: start;
+  }
 }

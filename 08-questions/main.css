@@ -294,40 +294,73 @@ nav a:hover {
 
 /* 
 ======================
-Container
+Questions
 ======================
 */
-main {
-  height: calc(100vh - 4rem);
-  display: grid;
-  place-items: center;
+.questions {
+  margin-top: 10rem;
 }
-.container {
-  text-align: center;
+.questions .title {
+  color: var(--primary-700);
+  font-family: "Great Vibes", cursive;
 }
-.container h2 {
-  background: var(--clr-black);
-  color: var(--clr-white);
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--fixed-width);
+  margin-top: 3rem;
+}
+.question {
+  background: var(--clr-white);
   border-radius: var(--border-radius);
-  padding: 1rem;
-  margin-bottom: 2.5rem;
-  letter-spacing: 5px;
-  font-weight: 600;
+  box-shadow: var(--shadow-2);
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
 }
-.color {
-  color: var(--primary-500);
-  text-transform: uppercase;
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.btn-hero {
-  text-transform: uppercase;
+.question-title p {
+  margin: 0;
+  letter-spacing: var(--letter-spacing);
+  color: var(--grey-700);
+}
+.question-btn {
+  font-size: 1.5rem;
   background: transparent;
-  color: var(--clr-black);
-  letter-spacing: 0.25rem;
-  font-weight: bold;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid var(--clr-black);
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--primary-600);
+  transition: var(--transition);
 }
-.btn-hero:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+.question-text {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.question-text p {
+  margin: 0;
+  color: var(--grey-500);
+}
+/* hide text */
+.question-text {
+  display: none;
+}
+.minus-icon {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
 }
